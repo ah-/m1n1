@@ -2165,7 +2165,7 @@ int kboot_prepare_dt(void *fdt)
         return -1;
     if (dt_set_isp_fwdata())
         return -1;
-    if (dt_reserve_asc_firmware("/arm-io/isp", "isp"))
+    if (dt_reserve_asc_firmware("/arm-io/isp0", "isp"))
         return -1;
 #ifndef RELEASE
     if (dt_transfer_virtios())
